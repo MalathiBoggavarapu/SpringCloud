@@ -24,7 +24,7 @@ public class ConfigClientAppApplication {
 	}
 	
 	@RequestMapping
-	public String printConfig() {
+	public String retrieveConfiguration() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("other property value :: " + properties.getProperty());
 		sb.append(" && ");
