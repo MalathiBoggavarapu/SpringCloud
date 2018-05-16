@@ -26,7 +26,8 @@ public class ConfigClientAppApplication {
 	@RequestMapping
 	public String printConfig() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(properties.getProperty());
+		sb.append("properties fetched from config server :: ")
+		sb.append(properties.getProperty());		
 		sb.append(" || ");
 		sb.append(someOtherProperty);
 		
